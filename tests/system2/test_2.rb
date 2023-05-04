@@ -1,8 +1,8 @@
-require 'minitest'
+require_relative 'base2'
 
-class MyTest1 < Minitest::Test
+class MyTest2 < MyTest1
 
   def test_minus
-    assert_equal 0, 2 - 2
+    assert_equal 0, minus
   end
 end
