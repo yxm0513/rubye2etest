@@ -1,11 +1,9 @@
-require 'logging'
 require 'minitest/autorun'
-log = Logging.logger('/tmp/a.log')
-log.level = :warn
+require_relative 'lib/logger'
 
 puts 'load tests'
 require_relative 'lib/test_helper'
 
-log.info("test start")
+@logger.info("test start")
 Minitest.autorun
-log.info("test end")
+@logger.info("test end")
