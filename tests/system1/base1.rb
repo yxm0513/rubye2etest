@@ -1,5 +1,5 @@
 module Base1
   def haha
-    puts 'a'
+    puts 'test base1'
   end
 end
